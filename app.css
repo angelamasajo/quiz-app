@@ -6,3 +6,21 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.opening {
+  border: solid 1px darkgray;
+  padding: 15px;
+  margin: 15px;
+  background-color: lightgray;
+}
+
+.quiz-questions {
+  border: solid 1px darkgray;
+  padding: 15px;
+  margin: 15px;
+  background-color: lightgray;
+}
