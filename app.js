@@ -229,13 +229,14 @@ function nextQuestion() {
 
 function validateCorrectAnswer() {
   let radios = $('input:radio[name="answer"]');
-  let selectedAnswer = $('input[name="answer"]:checked').data('answer').toString();
   let questionNumber = store.questionNumber;
   let correctAnswer = store.questions[questionNumber].correctAnswer;
-
+  let str = $('input[name="answer"]:checked').data('answer') || ''
+  let selectedAnswer = str.toString()
   if (radios.filter(':checked').length === 0) {
     alert('Please select your answer.');
     return;
+    console.log(radios); 
   } else {
     store.submittingAnswer = true;
     if (selectedAnswer === correctAnswer) {
