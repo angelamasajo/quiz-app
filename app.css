@@ -6,21 +6,64 @@
   * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
   *
 */
+
+
+
+
 h1 {
-  text-align: center;
-  margin: 20px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.opening {
-  border: solid 1px darkgray;
-  padding: 15px;
-  margin: 15px;
-  background-color: lightgray;
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  color: black;
 }
 
-.quiz-questions {
-  border: solid 1px darkgray;
-  padding: 15px;
+h1 {
+  margin-left: 20px;
+  color: white;
+}
+
+p {
+  font-size:16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.opening p {
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.opening, .quiz-questions, .answer-response, .quiz-results {
   margin: 15px;
+  padding: 15px;
+  border: 1px solid darkgrey;
+  display: flex;
+  flex-direction: column;
   background-color: lightgray;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+ol li {
+  margin: 10px;
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type='radio'] {
+  transform: scale(1.2)
+}
+
+.submit-answer, #beginQuiz, .restart-quiz, .see-results, .next-question {
+	display: block;
+	text-align: center;
+  /* margin: 0 auto; */
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: 1px solid brown;
+  border-radius: 10px;
 }
