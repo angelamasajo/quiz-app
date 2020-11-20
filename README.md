@@ -1,1 +1,3 @@
-### Boilerplate app structure for Quiz App project
+# Photography Quiz App
+
+Quiz app link: https://angelamasajo.github.io/quiz-app/
